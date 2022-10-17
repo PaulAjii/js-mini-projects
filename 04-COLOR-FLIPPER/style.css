@@ -35,7 +35,8 @@ button {
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
     text-align: center;
-    /* color: white; */
+    color: #555;
+    transition: .5s;
 }
 
 .title {
@@ -43,17 +44,15 @@ button {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #555;
 }
 
 .color-text {
     text-transform: uppercase;
     font-size: 20px;
-    color: #555;
     letter-spacing: 1px;
 }
 
-.color-text span {
+.color-text .color-value {
     opacity: .75;
     font-size: 15px;
     margin-top: 10px;
@@ -62,7 +61,7 @@ button {
 
 .btn {
     width: 50%;
-    background-color: aliceblue;
+    background-color: transparent;
     padding: 8px 10px;
     border-radius: 10px;
     color: #555;
