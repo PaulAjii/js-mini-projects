@@ -5,7 +5,7 @@
 - main tags
   - nav
     - div.nav-center
-      - span 'overreacted'
+      - span 'blogs'
       - button.btn 'toggle'
   - section.articles
     - article.post
