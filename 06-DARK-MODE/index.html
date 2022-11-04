@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <div class="nav-center">
+          <span>blogs</span>
+          <button class="btn" id="add-btn" style="--clr-primary: green;">add post</button>
+          <button class="btn" id="toggle-btn">toggle</button>
+        </div>
+      </nav>
+
+      <section class="articles"></section>
+    </main>
+
+    <!-- ========== MODAL ========== -->
+
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <form class="form">
+          <div class="form-control">
+            <label for="title">title: </label>
+            <input type="text" placeholder="Enter Title" name="title" id="title">
+          </div>
+
+          <div class="form-control">
+            <label for="date">date: </label>
+            <input type="date" placeholder="Enter Date" name="date" id="date">
+          </div>
+
+          <div class="form-control">
+            <label for="time">read time: </label>
+            <input type="number" placeholder="11" name="time" id="time">
+          </div>
+
+          <div class="form-control">
+            <label for="content">content: </label>
+            <textarea name="content" id="content" cols="30" rows="10" placeholder="Enter Content"></textarea>
+          </div>
+
+          <div class="action-btns">
+            <button type="button" class="btn" id="close-btn" style="--clr-primary: red; --clr-bcg: #fff;">close</button>
+            <input type="submit" class="btn" value="post" style="--clr-primary: blue; --clr-bcg: #fff;">
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <!-- ========== END OF MODAL ========== -->
+
+  </body>
+</html>
