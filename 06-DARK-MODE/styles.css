@@ -56,6 +56,14 @@ textarea {
   text-transform: capitalize;
   letter-spacing: 2px;
 }
+
+.nav-btns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn {
   background: var(--clr-primary);
   color: var(--clr-bcg);
@@ -65,8 +73,12 @@ textarea {
   text-transform: capitalize;
   transition: var(--transition);
   font-weight: bold;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   cursor: pointer;
+}
+
+.bx {
+  font-size: 16px;
 }
 
 .articles {

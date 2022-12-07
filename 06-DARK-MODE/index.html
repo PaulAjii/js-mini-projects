@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dark Mode</title>
+    <title>Blog App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./styles.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
@@ -19,8 +20,15 @@
       <nav>
         <div class="nav-center">
           <span>blogs</span>
-          <button class="btn" id="add-btn" style="--clr-primary: green;">add post</button>
-          <button class="btn" id="toggle-btn">toggle</button>
+
+          <div class="nav-btns">
+            <button class="btn" id="add-btn" style="--clr-primary: green;">
+              <i class='bx bx-plus'></i>
+            </button>
+            <button class="btn" id="toggle-btn">
+              <i class='bx bx-moon'></i>
+            </button>
+          </div>
         </div>
       </nav>
 

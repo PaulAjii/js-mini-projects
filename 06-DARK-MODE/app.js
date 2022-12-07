@@ -3,8 +3,11 @@ const addBtn = document.querySelector("#add-btn")
 const closeBtn = document.querySelector("#close-btn")
 const articlesSection = document.querySelector(".articles")
 const formDOM = document.querySelector(".form")
+// let darkTheme = false
 
-btn.addEventListener('click', () => document.querySelector("body").classList.toggle("dark-theme"))
+btn.addEventListener('click', () => {
+  document.querySelector("body").classList.toggle("dark-theme")
+})
 addBtn.addEventListener('click', () => document.querySelector(".modal-overlay").classList.add("open-modal"))
 closeBtn.addEventListener("click", () => document.querySelector(".modal-overlay").classList.remove("open-modal"))
 
