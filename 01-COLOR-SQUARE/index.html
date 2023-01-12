@@ -9,14 +9,14 @@
     <script defer src="./main.js"></script>
 </head>
 <body>
-    <h1 class="title">Color Square</h1>
-    <div>
+    <main class="main">
+        <h1 class="header">Color Square</h1>
         <section class="square" id="square">
             <p class="text-box" id="para">Empty Color Value</p>
         </section>
-        <form>
-            <label for="input">Enter a color name: </label>
-            <input 
+        <div class="form-control">
+            <input
+                class="input"
                 id="input"
                 type="text"
                 placeholder="Enter Color Value"
@@ -26,9 +26,11 @@
             <button 
                 type="button" 
                 id="btn"
-            >Flip color
+                disabled
+            >
+                Flip color
             </button>
-        </form>
-    </div>
+        </div>
+    </main>
 </body>
 </html>

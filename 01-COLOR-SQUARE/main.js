@@ -12,19 +12,20 @@ input.addEventListener("keyup", (e) => {
     
     if(!inputValue) {
         para.textContent = "Empty Color Value"
-        para.style.color = "#000"
+        para.style.color = "#333"
+        btn.disabled = true
+    } else if(inputValue) {
+        btn.disabled = false
     }
 })
 
 btn.addEventListener("click", () => {
-    if(para.textContent === "Empty Color Value") return
-
     if(para.textContent) {
         isTextDark = !isTextDark
 
         isTextDark 
         ? 
-            para.style.color = "#000"
+            para.style.color = "#333"
         :
             para.style.color = "#fff"
     }
